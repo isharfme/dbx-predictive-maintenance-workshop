@@ -1,0 +1,17 @@
+[project]
+name = "pdm-ws-producer"
+version = "0.0.0"
+description = "Environment-setup data producer for the workshop."
+requires-python = ">=3.11"
+dependencies = [
+  "boto3",
+  "awsiotsdk",
+  "python-dotenv",
+]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

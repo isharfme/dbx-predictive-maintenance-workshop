@@ -1,0 +1,10 @@
+[project]
+name = "cmapss-workshop"
+version = "0.1.0"
+dependencies = []
+
+# Pin the Git Folder Serverless runtime so the workshop notebooks run on a known
+# environment. Version 5 is Databricks Runtime 18.x, where Kinesis Structured
+# Streaming authenticates with a Unity Catalog service credential.
+[tool.databricks.environment]
+environment_version = "5"
